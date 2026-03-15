@@ -32,6 +32,9 @@ jobs:
 
     # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
     # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
+    - name: pls work
+      uses: gradle/actions/wrapper-validation@v5
+      
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v5 # v4.0.0
 
